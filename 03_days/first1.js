@@ -45,8 +45,8 @@
 
 // reduced method in the array
 
-var arr=[3,4,5,6,7,8,9]
-var sum=arr.reduce(function(total,item,index){
-    return total *=item
-},100)
-console.log(sum)
+// var arr=[3,4,5,6,7,8,9]
+// var sum=arr.reduce(function(total,item,index){
+//     return total *=item
+// },100)
+// console.log(sum)
