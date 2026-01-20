@@ -140,3 +140,94 @@
 // console.log(obj1.address.city); // Mumbai ❌
 
 
+
+
+// var random ="ggg"
+// var person ={
+//     fName: "abhishek pandey",
+//     lName: "Bumihar ",
+//     age:  28,
+//     random
+// }
+// console.log(person)
+
+
+// var person ={
+//     fName: "abhishek pandey",
+//     lName: "Bumihar ",
+//     age:  28,
+
+// }
+// console.log(person)
+
+// var perso2=Object.assign({},{a:1,b:2,c:3,...person})
+// console.log(person)
+
+
+
+
+// var person ={
+//     fName: "abhishek pandey",
+//     lName: "Bumihar ",
+//     age:  28,
+
+// }
+// Object.freeze(person)
+// person.fName="hi aap"
+// delete person.fName;
+// console.log(person)
+
+
+
+
+// var person ={
+//     fName: "abhishek pandey",
+//     lName: "Bumihar ",
+//     age:  28,
+
+// }
+// Object.seal(person)
+// person.fName="hi aap"
+// delete person.fName;
+// console.log(person)
+
+
+
+
+// var person = {
+//     name: "Abhishek",
+//     age: 28
+// };
+
+// var desc = Object.getOwnPropertyDescriptor(person, "age");
+// console.log(desc);
+
+
+
+// var person = {
+//     name: "Abhishek",
+//     age: 28
+// };
+
+// console.log(Object.hasOwn(person, "name")); // true
+// console.log(Object.hasOwn(person, "toString")); // false
+
+
+
+// var person = {
+//     name: "Abhishek",
+//     age: 28
+// };
+
+// console.log(person.hasOwnProperty("name")); // true
+// console.log(person.hasOwnProperty("toString")); // false
+
+
+
+
+// var person = {
+//     name: "Abhishek",
+//     age: 28
+// };
+
+// console.log(Object.getOwnPropertyNames(person));
