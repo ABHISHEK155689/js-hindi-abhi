@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Practice</title>
+</head>
+<body>
+
+    <h1 id="heading">Welcome to My Website</h1>
+
+    <p class="info">This is a paragraph</p>
+    <h1 class="info">Random text</h1>
+    <b class="info">Bold text</b>
+
+    <div id="main">
+        <span>Hello world</span>
+        <h1 id="hiddenText" style="display: none;">Abhishek Pandey</h1>
+    </div>
+
+    <button onclick="changeContent()">Click me</button>
+
+    <h3 id="output">Waiting...</h3>
+
+    <script>
+        function changeContent() {
+            // 1️⃣ Change heading text
+            var heading = document.getElementById("heading");
+            heading.textContent = "Content changed successfully!";
+
+            // 2️⃣ Change background color
+            var mainDiv = document.getElementById("main");
+            mainDiv.style.backgroundColor = "lightblue";
+
+            // 3️⃣ Change all elements with class "info"
+            var elements = document.getElementsByClassName("info");
+            for (let i = 0; i < elements.length; i++) {
+                elements[i].style.color = "red";
+                elements[i].textContent = "Updated text " + (i + 1);
+            }
+
+            // 4️⃣ Show hidden h1
+            var hidden = document.getElementById("hiddenText");
+            hidden.style.display = "block";
+
+            // 5️⃣ Output message
+            var output = document.getElementById("output");
+            output.textContent = "All DOM changes applied!";
+        }
+    </script>
+
+</body>
+</html>
