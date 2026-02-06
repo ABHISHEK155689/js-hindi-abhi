@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="heading">Welcome to My Website</h1>
+    <p class="info">This is a paragraph</p>
+
+    <div id="main">
+        <span>Hello, good morning</span>
+    </div>
+
+    <button onclick="changeHeading()">Click me</button>
+
+    <script>
+        var ele = document.getElementById("heading");
+        ele.textContent = "Welcome to My Website and have a nice day";
+
+        function changeHeading() {
+            var box = document.getElementById("main");
+            box.style.backgroundColor = "yellow";
+        }
+    </script>
+
+</body>
+</html>
